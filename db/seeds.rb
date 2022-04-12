@@ -10,7 +10,7 @@ User.destroy_all
 
 puts "Creating users"
 (0..20).each do |f|
-  email = "lavardwilltheard@yahoo.com"
+  email = Faker::Internet.email
   password = rand(100000..600000)
   firstname = Faker::Name.first_name
   lastname = Faker::Name.last_name
